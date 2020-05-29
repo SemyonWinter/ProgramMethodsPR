@@ -1,12 +1,5 @@
 #pragma once
-#include "element.h"
-
-struct container
-{
-	element* begin;
-	element* end;
-	int size;
-};
+#include "container_struct.h"
 
 
 void clear(container &ct);

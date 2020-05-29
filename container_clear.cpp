@@ -1,13 +1,4 @@
 #include "container.h"
-#include "number_complex.h"
-#include "number_fractal.h"
-
-void init(container &ct)
-{
-	ct.size = 0;
-	ct.begin = ct.end = nullptr;
-}
-
 
 void clear(container &ct)
 {
