@@ -5,5 +5,6 @@ number_complex* inComplex(std::ifstream & ifstr)
 	number_complex *num = new number_complex;
 	ifstr >> num->real_double;
 	ifstr >> num->imag_double;
+	ifstr >> num->measure;
 	return num;
 }
