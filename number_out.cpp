@@ -14,6 +14,10 @@ void out(number * num, std::ofstream & ofstr)
 		ofstr << ": FRACTAL. ";
 		out((number_fractal*)num->data, ofstr);
 	}
+	else if (type_key == type::POLAR) {
+		ofstr << ": POLAR. ";
+		out((number_polar*)num->data, ofstr);
+	}
 	else {
 		return;
 	}

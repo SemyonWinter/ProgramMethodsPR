@@ -1,6 +1,7 @@
 #pragma once
 #include "number_complex.h"
 #include "number_fractal.h"
+#include "number_polar.h"
 #include "number_struct.h"
 
 void clearNum(number *num);

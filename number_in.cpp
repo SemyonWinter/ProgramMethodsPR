@@ -10,6 +10,9 @@ number * in(std::ifstream & ifstr, int type_key)
 	else if (type_key == 2) {
 		num_element->data = inFract(ifstr);
 	}
+	else if (type_key == 3) {
+		num_element->data = inPolar(ifstr);
+	} 
 	else {
 		return nullptr;
 	}
