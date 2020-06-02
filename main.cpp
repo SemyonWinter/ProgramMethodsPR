@@ -20,6 +20,10 @@ int main(int argc, char* argv[]) {
 	cout << "Read. " << endl;
 	out(c, ofst);
 	cout << "Printed. " << endl;
+	sort(c);
+	out(c, ofst);
+	cout << "Sorted print. " << endl;
+
 	clear(c);
 	system("pause");
 	return 0;
