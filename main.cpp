@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
 	init(c);
 	in(c, ifst);
 	cout << "Read. " << endl;
-	out(c, ofst);
+	out(c, ofst, type::COMPLEX);
 	cout << "Printed. " << endl;
 	clear(c);
 	system("pause");
