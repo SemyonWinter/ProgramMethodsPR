@@ -5,3 +5,4 @@
 
 void out(number_complex * num, std::ofstream &ofstr);
 number_complex * inComplex(std::ifstream &ifstr);
+double new_function(number_complex *num);
