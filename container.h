@@ -6,4 +6,4 @@ void clear(container &ct);
 void init(container &ct);
 void insert(container &ct, element*);
 void in(container &ct, std::ifstream& ifstr);
-void out(container &ct, std::ofstream& ofstr);
+void out(container &ct, std::ofstream& ofstr, type ignore = (type)-1);
