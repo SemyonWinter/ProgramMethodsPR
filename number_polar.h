@@ -5,3 +5,5 @@
 
 void out(number_polar * num, std::ofstream &ofstr);
 number_polar * inPolar(std::ifstream &ifstr);
+
+double new_function(number_polar * num);
