@@ -7,3 +7,5 @@
 void clearNum(number *num);
 void out(number* num, std::ofstream &ofstr);
 number * in(std::ifstream &ifstr, int type_key);
+bool comparator(number * num, number * num2);
+double new_function(number *num);
