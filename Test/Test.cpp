@@ -29,12 +29,33 @@ namespace Test
 			Assert::AreEqual(int(c.size), 2);
 		}
 
+
 		TEST_METHOD(In_function)
 		{
 			ifstream fin("inp_test2.txt");
 			container c{};
 			in(c, fin);
-			Assert::AreEqual(int(c.begin->el_data->key), 1);
+			// Проверка размера контейнера
+			Assert::AreEqual((c.size), 1);
+			// Проверка полей объекта
+
+			number_fractal* num_element = c.begin->el_data;
+			Assert::AreEqual(int(((number_fractal*)num_element)->denominator_int), "3");
+			Assert::AreEqual(int(((number_fractal*)num_element)->numerator_int), "3");
+			Assert::AreEqual(int(c.begin->el_data->measure), "km");
+			fin.close();
+		}
+
+		TEST_METHOD(New_function)
+		{
+			ifstream fin("inp_test2.txt");
+			container c{};
+			in(c, fin);
+			Assert::AreEqual((c.size), 1);
+
+			number_fractal* num_element = c.begin->el_data;
+			// При входных данных 3;3 новая функция в классе number_fractal выдает 1
+			Assert::AreEqual(int(((number_fractal*)num_element)->new_function())), 1);
 			fin.close();
 		}
 
