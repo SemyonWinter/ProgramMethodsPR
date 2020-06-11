@@ -16,6 +16,6 @@ number * in(std::ifstream & ifstr, int type_key)
 	else {
 		return nullptr;
 	}
-
+	if (num_element == nullptr) return nullptr;
 	return num_element;
 }

@@ -7,6 +7,7 @@ void out(container &ct, std::ofstream & ofstr, type ignore)
 	if (ct.begin == nullptr) return;
 	for (auto i = ct.begin; i; i = i->next) {
 		if (ignore == i->el_data->key) continue;
+		if (i->el_data->data == nullptr) continue;
 		out(i->el_data, ofstr);
 	}
 }

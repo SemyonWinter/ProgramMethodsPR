@@ -10,6 +10,10 @@ void in(container &ct, std::ifstream & ifstr)
 		ifstr >> type_key;
 		number *num_element = new number;
 		num_element = in(ifstr, type_key);
+		if (num_element->data == nullptr) {
+			delete num_element;
+			return;
+		}
 		num_element->key = (type)(type_key-1);
 
 
