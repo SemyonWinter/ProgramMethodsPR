@@ -4,5 +4,5 @@
 #include "number_complex_struct.h"
 
 void out(number_complex * num, std::ofstream &ofstr);
-number_complex * inComplex(std::ifstream &ifstr);
+number_complex * in_complex(std::ifstream &ifstr);
 double new_function(number_complex *num);

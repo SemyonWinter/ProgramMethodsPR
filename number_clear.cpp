@@ -1,6 +1,6 @@
 #include "number.h"
 
-void clearNum(number * num)
+void clear_num(number * num)
 {
 	if (num->key == type::COMPLEX) {
 		delete (number_complex*)num->data;

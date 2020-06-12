@@ -1,6 +1,6 @@
 #include "number_complex.h"
 
-number_complex* inComplex(std::ifstream & ifstr)
+number_complex* in_complex(std::ifstream & ifstr)
 {
 	bool found_err = false;
 	number_complex *num = new number_complex;
