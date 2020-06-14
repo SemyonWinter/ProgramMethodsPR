@@ -27,12 +27,8 @@ int main(int argc, char* argv[]) {
 	init(c);
 	in(c, ifst);
 	cout << "Read. " << endl;
-	out(c, ofst, type::COMPLEX);
-	cout << "Printed. " << endl;
-	sort(c);
 	out(c, ofst);
-	cout << "Sorted print. " << endl;
-
+	multi_met(c, ofst);
 	clear(c);
 	system("pause");
 	return 0;

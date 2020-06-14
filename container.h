@@ -8,3 +8,4 @@ void insert(container &ct, element*);
 void in(container &ct, std::ifstream& ifstr);
 void out(container &ct, std::ofstream& ofstr, type ignore = (type)-1);
 void sort(container &ct);
+void multi_met(container &ct, std::ofstream& ofstr);
