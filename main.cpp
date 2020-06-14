@@ -20,6 +20,7 @@ int main(int argc, char* argv[]) {
 	cout << "Read. " << endl;
 	out(c, ofst);
 	cout << "Printed. " << endl;
+	multi_met(c, ofst);
 	clear(c);
 	system("pause");
 	return 0;
